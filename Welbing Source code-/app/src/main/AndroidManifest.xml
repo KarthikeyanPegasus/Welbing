@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBarTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".recentmedicines" android:screenOrientation="portrait" android:forceDarkAllowed="false"></activity>
+        <activity android:name=".choosemember" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".appointmentdetails" android:screenOrientation="portrait" android:forceDarkAllowed="false" />
+        <activity android:name=".appointmenthome" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".BookandAppointment" android:screenOrientation="portrait" android:forceDarkAllowed="false"></activity>
+        <activity
+            android:name=".addfamilymember"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" android:forceDarkAllowed="false" />
+        <activity android:name=".mapFindPharmacy" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".Map_find_hospital" android:screenOrientation="portrait" android:forceDarkAllowed="false" />
+        <activity android:name=".selectfamilymember" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".settings_signout" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".settings_editdevices" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".Settings_address" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".settings_Alarm" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".settings_home" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".predicted_medicine" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".predicting_animation" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".Symptoms" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".analysing_animation" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".glucosemeasure" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".pulseratemeasure" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".measureoxygen" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".IOTcheckonline" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".startiot" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".familymemberstat" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".Pagecarousel_Introduction" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".WelcomePage" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".SuccessActivity" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".signup_form2" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".Signup_form1" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".OTP" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".Login_form" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".loadinganimation2" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".loadinganimation1" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".IOT_signin" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".HomeActivity" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".ExclamActivity" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".BadActivity" android:screenOrientation="portrait" android:forceDarkAllowed="false"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" android:forceDarkAllowed="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

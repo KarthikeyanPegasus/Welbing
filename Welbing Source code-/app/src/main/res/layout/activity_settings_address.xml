@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyColor"
+    tools:context=".Settings_address">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bodyColor"
+            android:text="About"
+            android:textSize="15dp"
+            android:fontFamily="@font/roboto"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bodyColor"
+            android:text="support"
+            android:textSize="15dp"
+            android:fontFamily="@font/roboto"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="130dp"
+        android:id="@+id/userprofile"
+        android:src="@drawable/m1"
+        android:layout_marginStart="35dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admin1"
+        android:layout_below="@id/userprofile"
+        android:id="@+id/username"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="35dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_black"
+        android:textAllCaps="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@color/bodyColor"
+            android:text="Alarm"
+            android:onClick="alarms"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="address"
+            android:textColor="@color/bodyColor"
+            android:background="@drawable/bgwhite"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="edit device"
+            android:onClick="editdevices"
+            android:textColor="@color/white"
+            android:background="@color/bodyColor"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="sign out"
+            android:onClick="signouts"
+            android:textColor="@color/white"
+            android:background="@color/bodyColor"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/username"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bgwhite">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="15dp"
+                    android:layout_marginTop="35dp"
+                    android:textSize="15dp"
+                    android:id="@+id/Addressline1"
+                    android:textColor="@color/bodyColor"
+                    android:text="Address line 1"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/Addressline1e"
+                    android:layout_below="@id/Addressline1"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bgpurplebtn"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:id="@+id/Addressline2"
+                    android:layout_below="@id/Addressline1e"
+                    android:textColor="@color/bodyColor"
+                    android:text="Address line 2"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Addressline2"
+                    android:id="@+id/Addressline2e"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bgpurplebtn"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:id="@+id/postalcode"
+                    android:layout_below="@id/Addressline2e"
+                    android:textColor="@color/bodyColor"
+                    android:text="Postal Code"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/postalcode"
+                    android:id="@+id/postalcodee"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bgpurplebtn"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:id="@+id/Landmark"
+                    android:layout_below="@id/postalcodee"
+                    android:textColor="@color/bodyColor"
+                    android:text="Landmark"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Landmark"
+                    android:id="@+id/Landmarke"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bgpurplebtn"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:id="@+id/Phonenumber"
+                    android:layout_below="@id/Landmarke"
+                    android:textColor="@color/bodyColor"
+                    android:text="Phone Number"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Phonenumber"
+                    android:id="@+id/Phonenumbere"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bgpurplebtn"
+                    android:textSize="15dp"/>
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@id/Phonenumbere"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:text="save"
+                    android:layout_marginTop="35dp"
+                    android:textSize="20dp"
+                    android:onClick="save"
+                    android:background="@drawable/successbtn"
+                    android:layout_marginBottom="85dp"/>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/bodyColor"
+        android:gravity="center"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/homew"
+            android:layout_weight="1"
+            android:onClick="close"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/searchw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/settingsw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/footer"
+        android:background="@drawable/shadow"/>
+
+
+</RelativeLayout>

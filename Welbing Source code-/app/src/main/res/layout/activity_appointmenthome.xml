@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appointmenthome"
+    android:background="@color/bodyColor">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/Drname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_black"
+        android:text="Dr. James"
+        android:textAllCaps="true"
+        android:layout_marginTop="180dp"
+        android:letterSpacing=".2"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/ratingsicon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ratings"
+        android:layout_below="@id/Drname"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="250dp"
+        />
+
+        <TextView
+            android:id="@+id/drratings"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_below="@id/Drname"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/ratingsicon"
+            android:fontFamily="@font/roboto_black"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="85dp"
+        android:background="@color/white"
+        app:cardCornerRadius="35dp"
+        android:id="@+id/docinfo"
+        android:layout_below="@id/Drname"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speciality :"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"
+                android:id="@+id/speciality"
+                android:layout_marginTop="50dp"
+                android:textAllCaps="true"
+
+                android:textColor="@color/bodyColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cardio"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"
+                android:layout_marginTop="50dp"
+                android:textAllCaps="true"
+                android:id="@+id/dbspeciality"
+                android:layout_toRightOf="@id/speciality"
+                android:textColor="@color/bodyColor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@id/speciality"
+                android:layout_height="wrap_content"
+                android:text="Time :"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"
+                android:id="@+id/avalability"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/bodyColor"/>
+            <TextView
+                android:layout_below="@id/speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6pm to 8pm"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+
+                android:id="@+id/dbavailability"
+                android:layout_toRightOf="@id/speciality"
+                android:textColor="@color/bodyColor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@id/avalability"
+                android:layout_height="wrap_content"
+                android:text="status :"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"
+                android:id="@+id/workingstatus"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/bodyColor"/>
+            <TextView
+                android:layout_below="@id/avalability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Busy"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:id="@+id/dbworkingstatus"
+                android:layout_toRightOf="@id/speciality"
+                android:textColor="@color/bodyColor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@id/workingstatus"
+                android:layout_height="wrap_content"
+                android:text="Hospital :"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"
+                android:id="@+id/hospitalname"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/bodyColor"/>
+            <TextView
+                android:layout_below="@id/workingstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIMS"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:id="@+id/dbhospitalname"
+                android:layout_toRightOf="@id/speciality"
+                android:textColor="@color/bodyColor"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:layout_below="@id/dbhospitalname"/>
+           </RelativeLayout>
+            
+            
+        </RelativeLayout>
+        
+        
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="85dp"
+        android:background="@color/white"
+        app:cardCornerRadius="35dp"
+        android:id="@+id/docratings"
+        android:layout_below="@id/docinfo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/space"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/bodyColor"
+                    android:textSize="16dp"
+                    android:layout_below="@id/space"
+                    android:id="@+id/ratingtext"
+                    android:text="Ratings"/>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/topspace"
+                    android:layout_below="@id/ratingtext"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/topspace"
+                    android:src="@drawable/ratingbar"
+                    android:id="@+id/onestaricon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@id/topspace"
+                    android:layout_toRightOf="@id/onestaricon"
+                    android:layout_marginLeft="5dp"
+                    android:text="1"
+                    android:textColor="@color/bodyColor"
+                    android:textStyle="bold"
+                    />
+                <ProgressBar
+                    android:layout_below="@id/topspace"
+                    android:layout_width="200dp"
+                    android:id="@+id/onestar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="80"
+                    android:layout_marginLeft="75dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/onestar"
+                    android:src="@drawable/ratingbar"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/twostaricon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@id/onestar"
+                    android:layout_toRightOf="@id/onestaricon"
+                    android:layout_marginLeft="5dp"
+                    android:text="2"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/bodyColor"
+                    android:textStyle="bold"
+                    />
+                <ProgressBar
+                    android:layout_below="@id/onestar"
+                    android:layout_width="200dp"
+                    android:id="@+id/twostar"
+                    android:layout_marginTop="15dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="80"
+                    android:layout_marginLeft="75dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/twostar"
+                    android:src="@drawable/ratingbar"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/threestaricon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/twostar"
+                    android:layout_toRightOf="@id/onestaricon"
+                    android:layout_marginLeft="5dp"
+                    android:text="3"
+                    android:textColor="@color/bodyColor"
+                    android:textStyle="bold"
+                    />
+                <ProgressBar
+                    android:layout_below="@id/twostar"
+                    android:layout_width="200dp"
+                    android:id="@+id/threestar"
+                    android:layout_marginTop="15dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="80"
+                    android:layout_marginLeft="75dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/threestar"
+                    android:src="@drawable/ratingbar"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/fourstaricon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@id/threestar"
+                    android:layout_toRightOf="@id/onestaricon"
+                    android:layout_marginLeft="5dp"
+                    android:text="4"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/bodyColor"
+                    android:textStyle="bold"
+                    />
+                <ProgressBar
+                    android:layout_below="@id/threestar"
+                    android:layout_width="200dp"
+                    android:id="@+id/fourstar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="80"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_height="15dp"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/fourstar"
+                    android:src="@drawable/ratingbar"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/fivestaricon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_below="@id/fourstar"
+                    android:layout_toRightOf="@id/fivestaricon"
+                    android:layout_marginLeft="5dp"
+                    android:text="5"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/bodyColor"
+                    android:textStyle="bold"
+                    />
+                <ProgressBar
+                    android:layout_below="@id/fourstar"
+                    android:layout_width="200dp"
+                    android:id="@+id/fivestar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progress="80"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_height="15dp"/>
+
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_below="@id/fivestar"
+                    android:layout_height="30dp"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/docratings"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Reviews"
+            android:id="@+id/reviewtext"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reviewtext"
+            android:layout_marginTop="50dp"
+            android:id="@+id/doctorreviews"/>
+
+
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/doctorreviews"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="appointmentdetails"
+        android:background="@drawable/successbtn"
+        android:text="Book an Appointment"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+        
+    
+
+</RelativeLayout>

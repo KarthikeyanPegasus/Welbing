@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyColor"
+    tools:context=".recentmedicines">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"><RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Recent Medications"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:id="@+id/recentmedicinetxt"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/timeandstatus"
+        android:layout_below="@id/recentmedicinetxt">
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:background="@drawable/successbtn"
+            android:layout_marginRight="20dp"
+            android:text="Time"
+            android:id="@+id/time"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:text="status"
+            android:id="@+id/status"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:background="@drawable/successbtn"
+            android:layout_weight="1"/>
+        
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/timeandstatus"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/diseasescard"
+
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/bad"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/diseases"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="-60dp"
+            android:alpha="0.5"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="diseases"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:id="@+id/diseases"
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/diseasescard"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:id="@+id/morningcard"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#FC8D01"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/morning"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.5"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="diseases"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:id="@+id/morningtab"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/morningcard"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:id="@+id/afternooncard"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#87ceeb"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/afternoon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:alpha="1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="diseases"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:id="@+id/afternoontab"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/afternooncard"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:id="@+id/nightcard"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#27536B"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/night"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:alpha="1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="diseases"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:id="@+id/nighttab"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/nightcard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/bgyellowbtn"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            />
+    </RelativeLayout></ScrollView>
+
+
+</RelativeLayout>

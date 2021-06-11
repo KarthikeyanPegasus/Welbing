@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/bodyColor">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:focusable="true"
+            android:id="@+id/progressing"
+            app:cardCornerRadius="145dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ProgressBar
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:progress="100"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:id="@+id/scrollview"
+       android:layout_height="match_parent"
+       android:scrollbarAlwaysDrawVerticalTrack="true">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:id="@+id/header"
+               >
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="50dp"
+                   android:onClick="editprofile"
+                   android:background="@color/transparent"
+                   android:layout_alignParentLeft="true"
+                   android:id="@+id/profileholder">
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                   <ImageView
+                       android:layout_width="60dp"
+                       android:id="@+id/profile"
+                       android:layout_height="60dp"/>
+
+                   </RelativeLayout>
+               </androidx.cardview.widget.CardView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Username"
+                   android:id="@+id/usernamefromdb"
+                   android:textColor="@color/white"
+                   android:textSize="14dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_centerVertical="true"
+                   android:layout_toRightOf="@id/profileholder"
+
+                   />
+               <ImageView
+                   android:layout_width="60dp"
+                   android:layout_height="20dp"
+                   android:layout_centerVertical="true"
+                   android:onClick="aboutforward"
+                   android:layout_alignParentRight="true"
+                   android:src="@drawable/questionmark"
+                   android:id="@+id/about"
+                   />
+               <ImageView
+                   android:layout_width="60dp"
+                   android:layout_height="20dp"
+                   android:onClick="showqr"
+                   android:layout_centerVertical="true"
+                   android:layout_toLeftOf="@id/about"
+                   android:src="@drawable/qr"
+                   android:id="@+id/qrcode"
+                   />
+
+           </RelativeLayout>
+           <androidx.viewpager2.widget.ViewPager2
+               android:layout_width="match_parent"
+               android:layout_marginTop="10dp"
+               android:layout_height="350dp"
+               android:layout_below="@id/header"
+               android:foregroundGravity="center"
+               android:layout_centerHorizontal="true"
+               android:overScrollMode="ifContentScrolls"
+               android:clipToPadding="false"
+               android:id="@+id/homemaincarousel"/>
+            
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/whitebg"
+               android:background="@drawable/bgwhite"
+               android:layout_below="@id/homemaincarousel"
+               >
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:id="@+id/View1"
+                   />
+               <Button
+               android:layout_below="@id/View1"
+               android:layout_width="300dp"
+               android:layout_height="150dp"
+               android:text="Start Treatment"
+               android:textColor="@color/white"
+               android:id="@+id/starttreatment"
+                   android:onClick="starttreatment"
+               android:background="@drawable/bgpurplebtn"
+               android:layout_centerHorizontal="true"
+               android:textSize="20dp"
+               />
+               <View
+                   android:layout_below="@id/starttreatment"
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:id="@+id/View2"
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/featurelist"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:layout_below="@id/View2">
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="150dp"
+                   android:text="Book An Appointment"
+                   android:drawableTop="@drawable/hospital"
+                   android:padding="15dp"
+                   android:layout_weight="1"
+                   android:textColor="@color/bodyColor"
+                   android:id="@+id/bookappointment"
+                   android:onClick="bookappointment"
+                   android:background="@color/white"
+                   android:layout_centerHorizontal="true"
+                   android:textSize="12dp"
+                   />
+                   <Button
+                       android:layout_width="0dp"
+                       android:layout_height="150dp"
+                       android:text="Nearby hospital"
+                       android:drawableTop="@drawable/hospital"
+                       android:padding="15dp"
+                       android:onClick="nearbyhospital"
+                       android:layout_weight="1"
+                       android:textColor="@color/bodyColor"
+                       android:id="@+id/Locate"
+                       android:background="@color/white"
+                       android:layout_centerHorizontal="true"
+                       android:textSize="12dp"
+                       />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/featurelist2"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:layout_below="@id/featurelist">
+                   <Button
+                       android:layout_width="0dp"
+                       android:layout_height="150dp"
+                       android:text="news"
+                       android:drawableTop="@drawable/hospital"
+                       android:padding="15dp"
+                       android:layout_weight="1"
+                       android:onClick="certification"
+                       android:textColor="@color/bodyColor"
+                       android:id="@+id/certificate"
+                       android:background="@color/white"
+                       android:layout_centerHorizontal="true"
+                       android:textSize="12dp"
+                       />
+                   <Button
+                       android:layout_width="0dp"
+                       android:layout_height="150dp"
+                       android:text="Nearby pharmacy"
+                       android:drawableTop="@drawable/hospital"
+                       android:padding="15dp"
+                       android:layout_weight="1"
+                       android:onClick="nearbypharmacy"
+                       android:textColor="@color/bodyColor"
+                       android:id="@+id/nearbypharma"
+                       android:background="@color/white"
+                       android:layout_centerHorizontal="true"
+                       android:textSize="12dp"
+                       />
+
+               </LinearLayout>
+               <View
+                   android:layout_below="@id/featurelist2"
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:id="@+id/View5"
+                   />
+               
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:layout_below="@id/View5"
+                   android:orientation="horizontal"
+                   android:id="@+id/familymember"
+                   >
+                   <Button
+                       android:layout_width="150dp"
+                       android:layout_marginTop="25dp"
+                       android:layout_marginLeft="25dp"
+                       android:layout_height="150dp"
+                       android:paddingTop="25dp"
+                       android:onClick="addfamilmember"
+                       android:background="@drawable/bgpurplebtn"
+                       android:drawableTop="@drawable/add"
+                       android:text="add member"
+                       android:fontFamily="@font/roboto"
+                       android:textColor="@color/white"
+                       />
+
+                   <androidx.viewpager2.widget.ViewPager2
+                       android:layout_width="200dp"
+                       android:layout_height="150dp"
+                       android:layout_marginStart="20dp"
+                       android:overScrollMode="never"
+                       android:layout_gravity="center"
+                       android:clipToPadding="false"
+                       android:id="@+id/familymembercarousel"
+
+                       android:foregroundGravity="center"
+                       />
+
+
+
+               </LinearLayout>
+               <View
+                   android:layout_below="@id/familymember"
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:id="@+id/View3"
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="0dp"
+                   android:layout_below="@id/View3"
+                   android:orientation="vertical"
+                   >
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center_horizontal">
+                       <Button
+
+                           android:layout_width="165dp"
+                           android:layout_height="65dp"
+                           android:background="@drawable/successbtn"
+                           android:fontFamily="@font/roboto_black"
+                           android:padding="15dp"
+                           android:text="Invite A friend"
+                           android:id="@+id/bckbtn"
+                           android:onClick="invitefrnds"
+                           android:textColor="@color/white"
+                           android:textSize="15dp" />
+                       <Button
+                           android:layout_width="165dp"
+                           android:layout_height="65dp"
+                           android:layout_gravity="center"
+                           android:background="@drawable/badbtn"
+                           android:fontFamily="@font/roboto_black"
+                           android:layout_marginLeft="25dp"
+                           android:padding="15dp"
+                           android:text="Order Product"
+                           android:layout_toRightOf="@id/bckbtn"
+                           android:textColor="@color/white"
+                           android:textSize="15dp" />
+                   </RelativeLayout>
+                   <View
+                       android:layout_below="@id/familymember"
+                       android:layout_width="match_parent"
+                       android:layout_height="85dp"
+                       android:id="@+id/View4"
+                       />
+               </LinearLayout>
+
+
+
+           </RelativeLayout>
+
+       </RelativeLayout>
+   </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/bodyColor"
+        android:gravity="center"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/homew"
+            android:onClick="refresh"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/searchw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/settingsw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"
+            android:onClick="settings"
+            />
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_above="@id/footer"
+            android:background="@drawable/shadow"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

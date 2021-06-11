@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loadinganimation2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/logo3"
+                android:src="@drawable/logo1"
+                android:transitionName="logo1"
+
+                />
+            <ImageView
+                android:id="@+id/logo2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/logo3"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/logo1"
+                android:src="@drawable/logo2"
+                android:transitionName="logo2"
+
+                />
+
+            <ImageView
+                android:id="@+id/logo3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:transitionName="logo3"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/logo3" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/logo2"
+                android:fontFamily="@font/roboto_black"
+                android:text="WELBING"
+                android:id="@+id/appname"
+                android:visibility="visible"
+                android:letterSpacing=".5"
+                android:paddingTop="35dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/bad"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="nametransition"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

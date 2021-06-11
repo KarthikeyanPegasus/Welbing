@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WelcomePage"
+        android:background="@drawable/bgmixedwhitepurple"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/androidanimation"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon"
+                android:layout_marginTop="150dp"
+                android:transitionName="logo3"
+                />
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon"
+                android:fontFamily="@font/roboto_black"
+                android:text="WELBING"
+                android:visibility="visible"
+                android:letterSpacing=".5"
+                android:transitionName="nametransition"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/bad"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/androidanimation"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/roboto_black"
+            android:letterSpacing=".5"
+            android:text="WELCOME"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/welcomenote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_thin"
+            android:padding="50dp"
+            android:text="This is the application based on the machine learning algorithms and IOT devices to predict the diseases and the predictation"
+
+            android:textColor="@color/white"
+            android:textSize="25dp"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:background="@drawable/successbtn"
+            android:height="70dp"
+            android:width="150dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:onClick="WelcomeNext"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

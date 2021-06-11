@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/bodyColor"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/doctorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Doctorsname"
+                android:textAllCaps="true"
+                android:textColor="@color/bodyColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/specialisation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctorname"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto"
+                android:text="specializedin"
+                android:textColor="@color/bodyColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/availabletime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/specialisation"
+                android:layout_centerHorizontal="true"
+                android:text="after 6pm"
+                android:textColor="@color/bodyColor"
+                android:textSize="18dp"/>
+
+            </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

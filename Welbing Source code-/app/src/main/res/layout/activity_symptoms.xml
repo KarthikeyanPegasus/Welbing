@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyColor"
+    tools:context=".Symptoms">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/animationview"
+        app:lottie_url="https://assets2.lottiefiles.com/packages/lf20_qPMbFE.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/hidimg"
+        android:layout_centerInParent="true"
+        android:src="@drawable/message"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animationview"
+        android:layout_centerHorizontal="true"
+        android:text="Analysing"
+        android:id="@+id/hideid"
+        android:layout_margin="35dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="35dp"
+        android:fontFamily="@font/roboto"
+        android:text="select the Symptoms"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/symptom1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="Head ache"
+                    android:id="@+id/headache"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_selector" />
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="body pain"
+                    android:id="@+id/bodypain"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/btn_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/symptom2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/symptom1"
+                android:padding="15dp">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="cold"
+                    android:id="@+id/cold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_selector" />
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="stomach pain"
+                    android:id="@+id/stomachpain"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/btn_selector" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/symptom3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@id/symptom2"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="nausea"
+                    android:id="@+id/nausea"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_selector" />
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="dizziness"
+                    android:id="@+id/dizziness"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/btn_selector" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/symptom4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@id/symptom3"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:text="diarrhoea"
+                    android:id="@+id/diarrhoea"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_selector" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:background="@drawable/successbtn"
+                android:layout_below="@id/symptom4"
+                android:layout_marginTop="35dp"
+                android:id="@+id/proceed"
+                android:text="proceed"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/proceed"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

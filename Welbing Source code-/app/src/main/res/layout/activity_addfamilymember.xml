@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addfamilymember">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/bodyColor"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:id="@+id/Addfamilymembertxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="80dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Add family members "
+                    android:textAllCaps="true"
+                    android:layout_marginTop="80dp"
+                    android:letterSpacing=".2"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/fullname"
+                    android:layout_width="345dp"
+                    android:layout_height="60dp"
+                    android:hint="fullname"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:textColorHint="@color/bodyColor"
+                    android:background="@drawable/bginputwhite"
+                    android:layout_below="@id/Addfamilymembertxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="42dp"
+                    />
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="345dp"
+                    android:layout_height="60dp"
+                    android:hint="Age"
+                    android:inputType="text"
+                    android:textColorHint="@color/bodyColor"
+                    android:gravity="center"
+                    android:background="@drawable/bginputwhite"
+                    android:layout_below="@id/fullname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="27dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sexselector"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="27dp"
+                    android:layout_below="@id/age"
+                    ><Button
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/boyselector"
+                    android:textColor="@color/white"
+                    android:text="Male"
+                    android:onClick="selectmale"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/male"
+                    />
+                    <Button
+                        android:layout_width="170dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/badbtn"
+                        android:textColor="@color/white"
+                        android:text="Female"
+                        android:onClick="selectfemale"
+                        android:layout_toRightOf="@id/male"
+                        android:id="@+id/female"
+                        />
+
+
+
+
+                </RelativeLayout>
+                <EditText
+                    android:id="@+id/previousallergies"
+                    android:layout_width="345dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bginputwhite"
+                    android:layout_below="@id/sexselector"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="27dp"
+                    android:hint="Previous Allergies"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:textColorHint="@color/bodyColor"
+                    />
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="345dp"
+                    android:layout_height="60dp"
+                    android:hint="Weight"
+                    android:gravity="center"
+                    android:textColorHint="@color/bodyColor"
+                    android:background="@drawable/bginputwhite"
+                    android:inputType="number"
+                    android:layout_below="@id/previousallergies"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="42dp"
+                    />
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="345dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bginputwhite"
+                    android:layout_below="@id/weight"
+                    android:hint="Height"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColorHint="@color/bodyColor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="27dp"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/height"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+                        <Button
+
+                            android:layout_width="135dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/bgyellowbtn"
+                            android:fontFamily="@font/roboto_black"
+                            android:padding="15dp"
+                            android:text="BACK"
+                            android:id="@+id/bckbtn"
+                            android:onClick="addfamilymemberback"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/successbtn"
+                            android:fontFamily="@font/roboto_black"
+                            android:layout_marginLeft="25dp"
+                            android:padding="15dp"
+                            android:onClick="addfamilymembernext"
+                            android:id="@+id/nextbtn"
+                            android:text="Next"
+                            android:layout_toRightOf="@id/bckbtn"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

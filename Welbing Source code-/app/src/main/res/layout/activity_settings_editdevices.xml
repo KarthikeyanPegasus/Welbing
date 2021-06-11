@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyColor"
+    tools:context=".settings_editdevices">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bodyColor"
+            android:text="About"
+            android:textSize="15dp"
+            android:fontFamily="@font/roboto"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bodyColor"
+            android:text="support"
+            android:textSize="15dp"
+            android:fontFamily="@font/roboto"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="130dp"
+        android:id="@+id/userprofile"
+        android:src="@drawable/m1"
+        android:layout_marginStart="35dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin1"
+        android:layout_below="@id/userprofile"
+        android:id="@+id/username"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginStart="35dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_black"
+        android:textAllCaps="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="Alarm"
+            android:onClick="alarms"
+            android:textColor="@color/white"
+            android:background="@color/bodyColor"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="address"
+            android:onClick="addresses"
+            android:textColor="@color/white"
+            android:background="@color/bodyColor"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="edit device"
+            android:textColor="@color/bodyColor"
+            android:background="@drawable/bgwhite"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="sign out"
+            android:onClick="signout"
+            android:textColor="@color/white"
+            android:background="@color/bodyColor"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/username"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bgwhite">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="connected devices"
+                    android:textAllCaps="true"
+                    android:id="@+id/devicestext"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/bodyColor"
+                    android:layout_marginTop="35dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/devicestext"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="25dp"
+                    
+                    android:id="@+id/card_iotdevice">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bodyColor">
+                        
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:cardCornerRadius="25dp"
+                            android:id="@+id/cardicon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="25dp">
+                            
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_centerInParent="true"/>
+                                
+                            </RelativeLayout>
+                                                            
+                        </androidx.cardview.widget.CardView>
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/cardicon"
+                            android:layout_marginStart="35dp"
+                            android:text="devicename"
+                            android:id="@+id/devicename"
+                            android:fontFamily="@font/roboto_black"
+                            android:textColor="@color/white"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/card_iotdevice"
+                    android:layout_marginTop="35dp"
+                    android:padding="15dp"
+                    android:text="Last Usage:"
+                    android:id="@+id/lasttext"
+                    android:textSize="15dp"
+                    android:textColor="@color/bodyColor"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lasttext"
+                    android:layout_centerHorizontal="true"
+                    android:text="usageinfo"
+                    android:id="@+id/usageinfo"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/bodyColor"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/bodyColor"
+        android:gravity="center"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/homew"
+            android:layout_weight="1"
+            android:onClick="close"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/searchw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/settingsw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/footer"
+        android:background="@drawable/shadow"/>
+
+
+</RelativeLayout>

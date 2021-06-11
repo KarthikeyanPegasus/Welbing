@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyColor"
+    tools:context=".predicted_medicine">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/patient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="35dp"
+                android:fontFamily="@font/roboto"
+                android:padding="15dp"
+                android:text="Patient name"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/prescribed_medicine_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/patient_name"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto"
+                android:padding="15dp"
+                android:text="Prescribed medicine:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prescribed_medicine_holder"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/medicinecard"
+                app:cardCornerRadius="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="15dp"
+                    android:textColor="@color/bodyColor"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="morning"
+                    android:id="@+id/morningtablets"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="15dp"
+                    android:textColor="@color/bodyColor"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Afternoon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/morningtablets"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="15dp"
+                    android:textColor="@color/bodyColor"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="morning"
+                    android:layout_below="@id/morningtablets"
+                    android:id="@+id/Afternoontablets"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="15dp"
+                    android:textColor="@color/bodyColor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Night"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/Afternoontablets"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="15dp"
+                    android:textColor="@color/bodyColor"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="morning"
+                    android:layout_below="@id/Afternoontablets"
+                    android:id="@+id/nighttablets"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="25dp"
+                    android:textColor="@color/bodyColor"/>
+
+
+            </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/prescribed_diet_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/medicinecard"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto"
+                android:padding="15dp"
+                android:text="Prescribed diet:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dietcard"
+                android:layout_below="@id/prescribed_diet_holder"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:text="Foods to take"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="15dp"
+                        android:textColor="@color/bodyColor"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/take"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45dp"
+                        android:text="Foods to take"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="15dp"
+                        android:textColor="@color/bodyColor"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:text="Foods to avoid"
+                        android:layout_below="@id/take"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="15dp"
+                        android:textColor="@color/bodyColor"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/avoid"
+                        android:layout_below="@id/take"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45dp"
+                        android:text="Foods to take"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="25dp"
+                        android:textColor="@color/bodyColor"/>
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/prescribed_dosage_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dietcard"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto"
+                android:padding="15dp"
+                android:text="Total medicine"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:id="@+id/dosagecard"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prescribed_dosage_holder"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dosage"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="15dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="total medicine"
+                        android:textColor="@color/bodyColor"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:background="@drawable/successbtn"
+                android:layout_below="@id/dosagecard"
+                android:layout_marginTop="35dp"
+                android:id="@+id/proceed"
+                android:text="Book medicine"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/proceed"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/bodyColor"
+        android:gravity="center"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/homew"
+            android:onClick="home"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/searchw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/settingsw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/footer"
+        android:background="@drawable/shadow"/>
+
+</RelativeLayout>

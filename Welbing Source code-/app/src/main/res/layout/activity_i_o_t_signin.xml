@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IOT_signin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgmixedwhitepurple"
+        android:id="@id/logo"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon"
+            android:transitionName="logo3"
+            android:paddingTop="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="WELBING"
+            android:layout_below="@id/logo"
+            android:letterSpacing=".5"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="20dp"
+            android:transitionName="nametransition"
+            android:textColor="@color/bad"
+            android:id="@+id/textwelbing"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textwelbing"
+            android:id="@+id/thisbluetooth"
+            android:text="Select the IOT device"
+            android:layout_marginTop="45dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:layout_centerHorizontal="true"/>
+        <ListView
+            android:layout_width="345dp"
+            android:layout_height="265dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/thisbluetooth"
+            android:id="@+id/bluetoothlist"
+            android:background="@drawable/bginputwhite"
+            android:layout_marginTop="25dp"/>
+        <Button
+            android:layout_width="345dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/bluetoothlist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/successbtn"
+            android:text="Next"
+            android:onClick="IOTnext"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

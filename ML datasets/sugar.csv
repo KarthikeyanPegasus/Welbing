@@ -1,0 +1,261 @@
+age,level,severity
+6,70,low sugar 
+9,70,low sugar 
+12,70,low sugar 
+15,60,low sugar 
+18,60,low sugar 
+6,75,low sugar 
+9,75,low sugar 
+12,75,low sugar 
+15,65,low sugar 
+18,65,low sugar 
+6,78,low sugar 
+9,78,low sugar 
+12,78,low sugar 
+15,68,low sugar 
+18,68,low sugar 
+6,60,low sugar 
+9,60,low sugar 
+12,60,low sugar 
+15,50,low sugar 
+18,50,low sugar 
+21,60,low sugar 
+25,60,low sugar 
+30,60,low sugar 
+35,60,low sugar 
+40,60,low sugar 
+45,60,low sugar 
+50,60,low sugar 
+55,60,low sugar 
+60,60,low sugar 
+65,60,low sugar 
+70,60,low sugar 
+21,65,low sugar 
+25,65,low sugar 
+30,65,low sugar 
+35,65,low sugar 
+40,65,low sugar 
+45,65,low sugar 
+50,65,low sugar 
+55,65,low sugar 
+60,65,low sugar 
+65,65,low sugar 
+70,65,low sugar 
+21,68,low sugar 
+25,68,low sugar 
+30,68,low sugar 
+35,68,low sugar 
+40,68,low sugar 
+45,68,low sugar 
+50,68,low sugar 
+55,68,low sugar 
+60,68,low sugar 
+65,68,low sugar 
+70,68,low sugar 
+21,50,low sugar 
+25,50,low sugar 
+30,50,low sugar 
+35,50,low sugar 
+40,50,low sugar 
+45,50,low sugar 
+50,50,low sugar 
+55,50,low sugar 
+60,50,low sugar 
+65,50,low sugar 
+70,50,low sugar 
+6,80,normal
+9,80,normal
+12,80,normal
+15,70,normal
+18,70,normal
+6,90,normal
+9,90,normal
+12,90,normal
+15,80,normal
+18,80,normal
+6,100,normal
+9,100,normal
+12,100,normal
+15,90,normal
+18,90,normal
+6,110,normal
+9,110,normal
+12,110,normal
+15,100,normal
+18,100,normal
+6,120,normal
+9,120,normal
+12,120,normal
+15,110,normal
+18,110,normal
+6,130,normal
+9,130,normal
+12,130,normal
+15,120,normal
+18,120,normal
+6,140,normal
+9,140,normal
+12,140,normal
+15,120,normal
+18,120,normal
+6,150,normal
+9,150,normal
+12,150,normal
+15,130,normal
+18,130,normal
+6,160,normal
+9,160,normal
+12,160,normal
+15,140,normal
+18,140,normal
+6,170,normal
+9,170,normal
+12,170,normal
+15,150,normal
+18,150,normal
+6,180,normal
+9,180,normal
+12,180,normal
+15,160,high 
+18,160,high 
+6,190,high 
+9,190,high
+12,190,high
+15,170,high
+18,170,high
+6,200,high
+9,200,high
+12,200,high
+15,180,high
+18,180,high
+6,210,high
+9,210,high
+12,210,high
+15,190,high
+18,190,high
+6,220,high
+9,220,high
+12,220,high
+15,200,high
+18,200,high
+21,70,normal
+25,70,normal
+30,70,normal
+35,70,normal
+40,70,normal
+45,70,normal
+50,70,normal
+55,70,normal
+60,70,normal
+65,70,normal
+70,70,normal
+21,80,normal
+25,80,normal
+30,80,normal
+35,80,normal
+40,80,normal
+45,80,normal
+50,80,normal
+55,80,normal
+60,80,normal
+65,80,normal
+70,80,normal
+21,90,normal
+25,90,normal
+30,90,normal
+35,90,normal
+40,90,normal
+45,90,normal
+50,90,normal
+55,90,normal
+60,90,normal
+65,90,normal
+70,90,normal
+21,100,normal
+25,100,normal
+30,100,normal
+35,100,normal
+40,100,normal
+45,100,normal
+50,100,normal
+55,100,normal
+60,100,normal
+65,100,normal
+70,100,normal
+21,110,normal
+25,110,normal
+30,110,normal
+35,110,normal
+40,110,normal
+45,110,normal
+50,110,normal
+55,110,normal
+60,110,normal
+65,110,normal
+70,110,normal
+21,120,normal
+25,120,normal
+30,120,normal
+35,120,normal
+40,120,normal
+45,120,normal
+50,120,normal
+55,120,normal
+60,120,normal
+65,120,normal
+70,120,normal
+21,130,normal
+25,130,normal
+30,130,normal
+35,130,normal
+40,130,normal
+45,130,normal
+50,130,normal
+55,130,normal
+60,130,normal
+65,130,normal
+70,130,normal
+21,140,high
+25,140,high
+30,140,high
+35,140,high
+40,140,high
+45,140,high
+50,140,high
+55,140,high
+60,140,high
+65,140,high
+70,140,high
+21,150,high
+25,150,high
+30,150,high
+35,150,high
+40,150,high
+45,150,high
+50,150,high
+55,150,high
+60,150,high
+65,150,high
+70,150,high
+21,180,high
+25,180,high
+30,180,high
+35,180,high
+40,180,high
+45,180,high
+50,180,high
+55,180,high
+60,180,high
+65,180,high
+70,180,high
+21,200,high
+25,200,high
+30,200,high
+35,200,high
+40,200,high
+45,200,high
+50,200,high
+55,200,high
+60,200,high
+65,200,high
+70,200,high

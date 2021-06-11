@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyColor"
+    tools:context=".IOTcheckonline">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check your device is Online"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto"
+        android:textAllCaps="true"
+        android:textColor="@color/white"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="35dp"
+        android:id="@+id/thecard"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/calendar"
+                android:layout_centerVertical="true"
+                android:id="@+id/iotdeviceimage"
+                android:layout_marginLeft="30dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="65dp"
+                android:id="@+id/statusindicator"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/bad" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_black"
+                android:text="offline"
+                android:textAllCaps="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="140dp"
+                android:textColor="@color/bad"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thecard"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:text="If your device is not online. Please redo the IOT login step again by clicking reconfig button"
+        android:id="@+id/iotinformation"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:text="Reconfig"
+            android:onClick="Reconfig"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:textSize="20dp"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@color/success"
+            android:text="Proceed"
+            android:onClick="Proceedcheckup"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyColor"
+    tools:context=".settings_signout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bodyColor"
+            android:fontFamily="@font/roboto"
+            android:text="About"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bodyColor"
+            android:fontFamily="@font/roboto"
+            android:text="support"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/userprofile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="35dp"
+        android:src="@drawable/m1"
+        android:layout_marginTop="130dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userprofile"
+        android:layout_marginStart="35dp"
+        android:fontFamily="@font/roboto_black"
+        android:padding="15dp"
+        android:text="Admin1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="alarms"
+            android:background="@color/bodyColor"
+            android:text="Alarm"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"
+            android:text="address"
+            android:onClick="addresses"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:onClick="editdevices"
+            android:background="@color/bodyColor"
+            android:text="edit device"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/bgwhite"
+            android:text="sign out"
+            android:textColor="@color/bodyColor" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/username"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/settingsbgwhite2">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/roboto_black"
+                android:id="@+id/signouttext"
+                android:text="Are you sure Do you want to sign out?"
+                android:textColor="@color/bodyColor"
+                android:textSize="20dp" />
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/signouttext"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/badbtn"
+                android:text="Sign out"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"/>
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bodyColor"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"
+            android:onClick="close"
+            android:src="@drawable/homew" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"
+            android:src="@drawable/searchw" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"
+            android:src="@drawable/settingsw" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/footer"
+        android:background="@drawable/shadow" />
+
+
+</RelativeLayout>

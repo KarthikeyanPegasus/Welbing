@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".familymemberstat"
+    android:background="@color/bodyColor"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parentlayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/backbtn"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bgyellowbtn"
+                android:text=" view Report"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/memberprofile"
+            android:layout_width="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="80dp"
+            android:layout_height="180dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/memberprofile"
+            android:textSize="39dp"
+            android:padding="10dp"
+            android:id="@+id/membername"
+            android:text="Mr. Membername"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"/>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/membername"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:id="@+id/agelayout"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:id="@+id/agetext"
+            android:text="Age : "
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:id="@+id/age"
+            android:text="18"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"/>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/agelayout"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/heightlayout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:id="@+id/heighttext"
+                android:text="Height  "
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:id="@+id/height"
+                android:text="185 cms"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/heightlayout"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/weightlayout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:id="@+id/weighttext"
+                android:text="Weight    "
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:id="@+id/weight"
+                android:text="78kg"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/weightlayout"
+            android:onClick="recentprescribed"
+            android:id="@+id/prescribed"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/successbtn"
+            android:text="Recently prescribed medicine"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/prescribed"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/appointment"
+            android:onClick="booktheappointment"
+            android:background="@drawable/successbtn"
+            android:text="Book Appointment"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/bodyColor"
+        android:gravity="center"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/homew"
+            android:layout_weight="1"
+            android:onClick="home"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/searchw"
+            android:layout_weight="1"
+            android:background="@color/bodyColor"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/settingsw"
+            android:layout_weight="1"
+            android:onClick="settings"
+            android:background="@color/bodyColor"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/footer"
+        android:background="@drawable/shadow"/>
+
+</RelativeLayout>
